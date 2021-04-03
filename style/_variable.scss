@@ -1,0 +1,33 @@
+$color-primary: #060A24;
+$title: 'IBM Plex Sans', sans-serif;
+$paragraph: 'IBM Plex Mono', monospace;
+$semibold: 'IBM Plex Sans', sans-serif;
+
+%font-title {
+    font-family: $title;
+    color: $color-primary;
+    font-weight: 400;
+
+}
+%font-title2 {
+    font-family: $title;
+    font-weight: 400;
+}
+
+%font-paragraph {
+    font-family: $paragraph;
+    font-weight: 300;
+    color: $color-primary;
+
+}
+%font-paragraph-m {
+    font-family: $paragraph;
+    color: $color-primary;
+    font-weight: 500;
+
+}
+%semibold{
+    font-family: $semibold;
+    color: $color-primary;
+    font-weight: 600;
+}

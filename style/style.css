@@ -1,0 +1,670 @@
+@charset "UTF-8";
+.intro div h1, .episodios h1, .phone .DeDonde h1, .invitadas h1, .temas h1, .novedades h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060A24;
+  font-weight: 400;
+}
+
+.check1:checked ~ .MenuH::after, .intro .intro2 p, .phone .DeDonde p, footer p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  color: #060A24;
+}
+
+.intro .intro2 .more, .novedades .more {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  font-weight: 500;
+}
+
+.temas .temas_logo div h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060A24;
+  font-weight: 600;
+}
+
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Mobile First*/
+/*HEADER
+breakpoint 320*/
+header {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0px 5%;
+}
+
+header .MenuH {
+  font-size: 30px;
+}
+
+header .MenuH::after {
+  content: "☰";
+}
+
+header img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Menu hamburguesa*/
+.check1 {
+  display: none;
+}
+
+.menu_lateral {
+  display: none;
+  width: 100%;
+  height: 48px;
+}
+
+.menu_lateral a {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #0000EC;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.check1:checked ~ .menu_lateral {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 52px;
+  left: 0px;
+}
+
+.check1:checked ~ .menu_lateral li {
+  height: 62px;
+  background-color: #0000EC;
+}
+
+.check1:checked ~ .MenuH::after {
+  content: "X";
+  font-size: 20px;
+}
+
+/* BODY*/
+.line-through {
+  text-decoration: line-through;
+}
+
+.intro {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro div h1 {
+  font-size: 36px;
+  margin: 0px;
+}
+
+.intro .intro2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .intro2 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.intro .intro2 .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  width: 100%;
+  height: 48px;
+  margin: 15px 0;
+  background-color: #00F3BB;
+}
+
+.intro .intro2 .more:hover {
+  background: #0000fe;
+  background: -webkit-gradient(linear, right top, left top, from(#0000fe), to(#00f0b8));
+  background: linear-gradient(270deg, #0000fe 0%, #00f0b8 100%);
+  color: #FFFFFF;
+}
+
+.episodios {
+  width: 100vw;
+  padding-top: 46px;
+  padding-bottom: 143.5px;
+  background: blue;
+  background: linear-gradient(225deg, blue 0%, #0000a3 100%);
+  -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+          clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+
+.episodios h1 {
+  margin: 10px;
+  font-size: 36px;
+  color: #FFFFFF;
+  background-color: transparent;
+  position: relative;
+}
+
+.episodios .iframes {
+  background-color: transparent;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.episodios .iframes iframe {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* en desktop es nowrap*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -50px 10px;
+}
+
+.phone img {
+  background-color: transparent;
+  position: relative;
+  width: auto;
+  height: auto;
+  z-index: 10;
+  top: -50px;
+  max-width: 360px;
+}
+
+.phone .DeDonde {
+  margin-left: 15px;
+}
+
+.phone .DeDonde h1 {
+  font-size: 36px;
+}
+
+.phone .DeDonde p {
+  font-size: 14px;
+  max-width: 464px;
+}
+
+.invitadas {
+  margin: 75px 10px 40px;
+  width: 100vw;
+}
+
+.invitadas h1 {
+  font-size: 36px;
+  margin-left: 15px;
+}
+
+.invitadas .imagen_invitadas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+
+.invitadas .imagen_invitadas img {
+  width: 100%;
+  margin: 0;
+}
+
+.temas {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+}
+
+.temas h1 {
+  font-size: 36px;
+  margin-left: 16px;
+}
+
+.temas .temas_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temas .temas_logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.temas .temas_logo div img {
+  max-width: 104px;
+  width: auto;
+  height: auto;
+}
+
+.temas .temas_logo div h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.novedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 65px;
+  background: blue;
+  background: linear-gradient(225deg, blue 0%, #0000a3 100%);
+  -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.novedades h1 {
+  font-size: 36px;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  width: 288px;
+}
+
+.novedades .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  width: 288px;
+  height: 48px;
+  margin: 15px 0;
+  background-color: #00F3BB;
+}
+
+.novedades .more:hover {
+  background: #0000fe;
+  background: -webkit-gradient(linear, right top, left top, from(#0000fe), to(#00f0b8));
+  background: linear-gradient(270deg, #0000fe 0%, #00f0b8 100%);
+  color: #FFFFFF;
+}
+
+footer {
+  margin: 25px 0;
+}
+
+footer p {
+  margin: 25px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer div a {
+  color: #060A24;
+}
+
+/*breakpoint tablet*/
+@media screen and (min-width: 321px) and (max-width: 740px) {
+  .invitadas {
+    margin: 15px 0;
+    width: 100vw;
+  }
+  .invitadas h1 {
+    margin: 50px 0px 20px 20px;
+    font-size: 36px;
+  }
+  .invitadas .imagen_invitadas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+  }
+  .invitadas .imagen_invitadas img {
+    width: 100%;
+  }
+  .episodios .iframes iframe {
+    max-width: 400px;
+  }
+}
+
+/*breakpoint desktop*/
+@media screen and (min-width: 741px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0px 7%;
+  }
+  header nav .MenuH {
+    display: none;
+  }
+  header nav .menu_lateral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  header nav .menu_lateral li {
+    text-decoration: none;
+    list-style: none;
+  }
+  header nav .menu_lateral li a {
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #FFFFFF;
+    color: #060A24;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    padding: 0 48px;
+    list-style: none;
+  }
+  header nav .menu_lateral li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header nav .menu_lateral li a:active {
+    color: #060a2456;
+    text-decoration: line-through;
+  }
+  header nav img {
+    margin-left: 100px;
+    margin-left: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .intro {
+    margin-left: 200px;
+  }
+  .intro div h1 {
+    font-size: 64px;
+  }
+  .intro .blue-dot {
+    color: #0000EC;
+  }
+  .intro .intro2 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .intro .intro2 p {
+    visibility: hidden;
+    display: block;
+    max-width: 628px;
+  }
+  .intro .intro2 p:before {
+    max-width: 628px;
+    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+    visibility: visible;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .intro .intro2 .more {
+    max-width: 226px;
+  }
+  .episodios {
+    width: 100vw;
+    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  }
+  .episodios h1 {
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  .episodios .iframes {
+    left: 100px;
+  }
+  .episodios .iframes iframe {
+    padding: 35px 15px;
+    max-width: 584px;
+    background-color: transparent;
+  }
+  .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    /* en desktop es nowrap*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -50px 190px;
+  }
+  .phone .DeDonde h1 {
+    font-size: 48px;
+  }
+  .phone .DeDonde p {
+    font-size: 16px;
+  }
+  .invitadas {
+    margin: 0;
+    width: 100vw;
+  }
+  .invitadas h1 {
+    margin: 64px 0px 36px 200px;
+    font-size: 48px;
+  }
+  .invitadas .imagen_invitadas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin: 0;
+  }
+  .invitadas .imagen_invitadas img {
+    width: 100%;
+  }
+  .temas {
+    width: 100vw;
+  }
+  .temas h1 {
+    margin: 64px 0px 56px 200px;
+    font-size: 48px;
+  }
+  .temas .temas_logo {
+    margin-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .temas .temas_logo div {
+    width: 100%;
+  }
+  .novedades {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .novedades h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+  .novedades #more {
+    width: 345px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    margin: 0 100px;
+    font-size: 16px;
+  }
+  footer div {
+    width: 200px;
+    margin: 18px 36px;
+  }
+  footer div a i {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
